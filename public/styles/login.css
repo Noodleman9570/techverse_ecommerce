@@ -1,0 +1,86 @@
+.login {
+    display: grid;
+    place-items: center;
+    margin: 0;
+    width: 100%;
+    height: 60vh;
+}
+
+.form-container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 300px;
+    z-index: 2;
+}
+.logo-container {
+    display: flex;
+    justify-content: center;
+}
+.logo_p {
+    width: 150px;
+    margin-top: 80px;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+}
+.form a {
+   margin-bottom: 52px;
+   font-size: var(--sm);
+   text-align: center;
+   text-decoration: none;
+   color: var(--azulito-fuertito);
+}
+.label {
+    margin-bottom: 4px;
+    font-size: var(--sm);
+    font-weight: bold;
+}
+.input {
+    height: 30px;
+    padding: 6px;
+    margin-bottom: 12px;
+    font-size: var(--md);
+    background-color: var(--hospital-green);
+    border: none;
+    border-radius: 8px;
+}
+.input-email {
+    margin-bottom: 12px;
+}
+.primary-button {
+    height: 50px;
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+    font-weight: bold;
+    font-size: var(--md);
+    color: var(--white);
+    background-color: var(--azulito-fuertito);
+    cursor: pointer;
+}
+.secondary-button {
+    margin-bottom: 20px;
+    border: 1px solid var(--very-light-pink);
+    color: var(--very-light-pink);
+    background-color: var(--white);
+    transition: all 200ms;
+}
+.secondary-button:hover {
+    color: var(--white);
+    background-color: var(--very-light-pink);
+}
+.login-button {
+    margin-top: 14px;
+    margin-bottom: 30px;
+}
+@media (max-width: 640px) {
+    .logo {
+        display: block;
+    }
+
+    .form-container{
+        height: 100%;
+        
+    }
+}
